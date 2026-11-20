@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* 명함 색상 (남색·빨간색)과 폰트를 Tailwind 테마로 등록 → bg-navy, text-brand-red 처럼 사용 */
+@theme {
+  --color-navy: #0b3b8f;
+  --color-navy-dark: #082c6c;
+  --color-brand-red: #e1141e;
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+body {
+  @apply min-h-dvh bg-[linear-gradient(180deg,#ffffff_0%,#e8edf7_100%)] bg-fixed font-sans text-slate-900 antialiased;
+  letter-spacing: -0.01em;
+}
